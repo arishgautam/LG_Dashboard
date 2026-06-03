@@ -1,11 +1,21 @@
-import { Button } from "./components/ui/button"
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Layout from "./layout";
+import Dashboard from "./components/dashboard/Dashboard";
 
 const App = () => {
   return (
-    <div className="flex min-h-svh flex-col items-center justify-center text-red-500">
-      <Button>Click me</Button>
-    </div>
-  )
-}
+    <Routes>
+      {/* Pages without layout */}
+      <Route path="/" element={<Home />} />
 
-export default App
+      {/* Pages with layout */}
+      <Route element={<Layout />}>
+        <Route path="/dashboard" element={<Dashboard />} />
+        {/* <Route path="/user" element={<Dashboard />} /> */}
+      </Route>
+    </Routes>
+  );
+};
+
+export default App;
