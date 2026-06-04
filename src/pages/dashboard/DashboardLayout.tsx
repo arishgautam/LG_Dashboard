@@ -1,9 +1,9 @@
 import { Outlet } from "react-router-dom";
-import AppSidebar from "./components/dashboard/AppSidebar.tsx";
-import Navbar from "./components/dashboard/Navbar.tsx";
-import { SidebarProvider } from "./components/ui/sidebar.tsx";
+import AppSidebar from "../../components/dashboard/AppSidebar.tsx";
+import Navbar from "../../components/dashboard/Navbar.tsx";
+import { SidebarProvider } from "../../components/ui/sidebar.tsx";
 
-export default function Layout() {
+export default function DashboardLayout() {
   const defaultOpen = localStorage.getItem("sidebar_state");
   return (
     <div className="flex">
