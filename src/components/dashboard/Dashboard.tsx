@@ -1,8 +1,8 @@
-import AppBarChart from "@/components/AppBarChart";
-import AppAreaChart from "@/components/AppAreaChart";
-import AppPieChart from "@/components/AppPieChart";
-import CardList from "@/components/CardList";
-import TodoList from "@/components/TodoList";
+import AppBarChart from "@/components/custom/AppBarChart";
+import AppAreaChart from "@/components/custom/AppAreaChart";
+import AppPieChart from "@/components/custom/AppPieChart";
+import CardList from "@/components/custom/CardList";
+import TodoList from "@/components/custom/TodoList";
 
 
 const Dashboard = () => {

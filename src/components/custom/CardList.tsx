@@ -1,6 +1,6 @@
 
-import { Card, CardContent, CardFooter, CardTitle } from "./ui/card";
-import { Badge } from "./ui/badge";
+import { Card, CardContent, CardFooter, CardTitle } from "../ui/card";
+import { Badge } from "../ui/badge";
 
 const popularContent = [
   {
